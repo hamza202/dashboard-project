@@ -1,0 +1,289 @@
+//Variables
+$mainColor: #00B5E0;
+$light-black: #6D6D6D;
+$light-gray: #AEACAC;
+$light-bg: rgba(0 , 181 , 224 , 0.1);
+
+@import "../scss/_functions.scss";
+@import "../scss/_variables.scss";
+@import "../scss/mixins/_breakpoints.scss";
+@import "jquery.mmenu.all.css";
+@import "fontawesome-all.css";
+@import "font.css";
+
+body{
+  font-family: SegoeUI , 'sans-serif';
+  background-color: #FCFCFC;
+  color: #393939;
+}
+%my-btn{
+  background-color: $mainColor;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  border: 0;
+  @extend %transition3;
+  &:hover{
+    color: #fff;
+    background-color: #00abd6;
+  }
+  i{
+    margin-right: 5px;
+  }
+}
+.my-btn{
+  @extend %my-btn;
+}
+.radius-10{
+  border-radius: 10px !important;
+}
+//sitting
+a{
+  @extend %transition3;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.mm-listitem{
+  border: 0;
+}
+.mm-listitem:after{
+  display: none;
+}
+.mainColor{
+  color: $mainColor;
+}
+.font-600{
+  font-weight: 600;
+}
+.font-700{
+  font-weight: 700;
+}
+//side menu
+.top-mm-listitem{
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+  p{
+    color: $light-black;
+    font-size: 15px;
+  }
+}
+.mm-listitem{
+  a.mm-listitem__text{
+    color: $light-gray;
+    white-space:normal;
+    padding-right: 20px;
+    font-size: 15px;
+    padding-left: 40px;
+    i{
+      position: absolute;
+      left: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 17px;
+      color: $light-gray;
+      width: 21px;
+      text-align: center;
+    }
+  }
+  &.active , &:hover{
+    a.mm-listitem__text{
+      @extend %transition3;
+
+      color: #393939;
+      position: relative;
+      background-color: $light-bg;
+      i{
+        color: $mainColor;
+      }
+      &:before{
+        content: '';
+        background-color: $mainColor;
+        width: 4px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      &:after{
+        content: '';
+        border-bottom: none !important;
+        border-right: none !important;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        display: block;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+        right: 10px;
+        left: auto;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $mainColor;
+      }
+    }
+
+  }
+}
+.mm-navbar{
+  height: 55px;
+}
+.navbar-light{
+  background-color: $light-bg;
+  .navbar-brand{
+    font-size: 22px;
+    padding: 0;
+    color: #393939;
+  }
+}
+.mm-panels>.mm-panel>.mm-navbar+.mm-listview{
+  margin-top: -10px;
+}
+.mm-btn_close:before{
+  right: 13px;
+}
+.mm-btn_close:after, .mm-btn_close:before{
+  width: 9px;
+  height: 9px;
+  border-color: #393939;
+}
+.mm-btn_close:after{
+  right: 26px;
+}
+.mm-iconbar__top{
+  padding: 0 10px;
+  a{
+    color: $light-gray;
+    font-size: 25px;
+    margin-bottom: 20px;
+    &.active{
+      background-color: $mainColor;
+      color: #fff;
+      border-radius: 16px;
+      @extend %box_shadow;
+    }
+  }
+}
+
+//index
+.add-pricing-list-item.my-btn{
+  color: #393939;
+  font-weight: 600;
+  &:hover{
+    color: #fff;
+  }
+}
+.edit-profile-photo img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.edit-profile-photo {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid  #707070;
+}
+
+.change-photo-btn {
+  font-weight: 600;
+  padding: 5px 6px;
+  color: #333;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 13px;
+  transition: .3s;
+  line-height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+
+.photoUpload {
+  position: relative;
+  overflow: hidden;
+  padding: 3px 12px;
+  height: 100%;
+}
+
+.photoUpload input.upload {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.change-photo-btn:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.change-photo-btn i {
+  margin-right: 2px;
+}
+.reg-form{
+  .form-control{
+    height: 45px;
+  }
+  .custom-select{
+    height: 45px;
+  }
+  .input-group-text{
+    height: 45px;
+  }
+  .input-group-text{
+    background-color: #fcfcfc;
+  }
+
+}
+.submit-btn{
+  font-size: 18px;
+  min-width: 150px;
+}
+
+//Extend
+%transition5 {
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+%transition3 {
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+%box_shadow{
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(0,179,224,0.28);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0,179,224,0.28);
+  box-shadow: 0px 3px 12px 0px rgba(0,179,224,0.28);
+}
