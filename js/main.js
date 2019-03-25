@@ -7,12 +7,13 @@ $(document).ready(function () {
             iconbar: {
                 add: true,
                 size: 40,
+                type		: 'tabs',
                 top: [
                     '<a href="#"><img src="./image/logo.png" class="logo" alt=""></a>',
-                    '<a href="#" class="active"><span class="fal fa-address-book"></span></a>',
-                    '<a href="#"><span class="far fa-search"></span></a>',
-                    '<a href="#"><span class="fal fa-cog"></span></a>',
-                    '<a href="#"><span class="fal fa-user"></span></a>'
+                    '<a href="#panel-menu"><span class="fal fa-address-book"></span></a>',
+                    '<a href="#panel-menu2"><span class="far fa-search"></span></a>',
+                    '<a href="#panel-menu3"><span class="fal fa-cog"></span></a>',
+                    '<a href="#panel-menu4"><span class="fal fa-user"></span></a>'
                 ],
             },
             sidebar: {

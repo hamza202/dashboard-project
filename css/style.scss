@@ -165,7 +165,7 @@ a{
     color: $light-gray;
     font-size: 25px;
     margin-bottom: 20px;
-    &.active{
+    &.mm-iconbar__tab_selected{
       background-color: $mainColor;
       color: #fff;
       border-radius: 16px;

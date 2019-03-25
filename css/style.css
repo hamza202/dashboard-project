@@ -131,7 +131,7 @@ a {
     color: #AEACAC;
     font-size: 25px;
     margin-bottom: 20px; }
-    .mm-iconbar__top a.active {
+    .mm-iconbar__top a.mm-iconbar__tab_selected {
       background-color: #00B5E0;
       color: #fff;
       border-radius: 16px; }
@@ -222,7 +222,7 @@ a {
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s; }
 
-.mm-iconbar__top a.active {
+.mm-iconbar__top a.mm-iconbar__tab_selected {
   -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 179, 224, 0.28);
   -moz-box-shadow: 0px 3px 12px 0px rgba(0, 179, 224, 0.28);
   box-shadow: 0px 3px 12px 0px rgba(0, 179, 224, 0.28); }
