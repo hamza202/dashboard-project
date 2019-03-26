@@ -136,6 +136,12 @@ a {
       color: #fff;
       border-radius: 16px; }
 
+#pricing-list-container {
+  width: 100%; }
+
+.switcher-content h3.font-700 {
+  font-size: 20px; }
+
 .add-pricing-list-item.my-btn {
   color: #393939;
   font-weight: 600; }
