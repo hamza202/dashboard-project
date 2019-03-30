@@ -8,6 +8,7 @@ $dark-font: #393939;
 @import "../scss/_functions.scss";
 @import "../scss/_variables.scss";
 @import "../scss/mixins/_breakpoints.scss";
+@import "animate.css";
 @import "jquery.mmenu.all.css";
 @import "fontawesome-all.css";
 @import "font.css";
@@ -326,10 +327,15 @@ a{
     border-radius: 50px;
     background-color:#B6E8F5;
     .progress-bar{
+      animation: progress 1.5s ease-in-out forwards;
       font-size: 14px;
       border-radius: 50px;
       background-color:$mainColor;
       padding-bottom: 2px;
+      .title{
+        opacity: 0;
+        animation: show 1.5s forwards ease-in-out;
+      }
     }
   }
 }
@@ -405,4 +411,21 @@ a{
   -webkit-box-shadow: 0px 3px 12px 0px rgba(0,179,224,0.28);
   -moz-box-shadow: 0px 3px 12px 0px rgba(0,179,224,0.28);
   box-shadow: 0px 3px 12px 0px rgba(0,179,224,0.28);
+}
+//animation
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
