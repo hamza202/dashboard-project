@@ -299,6 +299,12 @@ a {
   text-align: center;
   font-size: 18px; }
 
+.pdf-btn {
+  border-radius: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
 .my-btn, a, .mm-listitem.active a.mm-listitem__text, .mm-listitem:hover a.mm-listitem__text {
   -webkit-transition: all ease-in-out 0.3s;
   -moz-transition: all ease-in-out 0.3s;

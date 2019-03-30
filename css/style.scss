@@ -380,6 +380,14 @@ a{
   font-size: 18px;
   }
 }
+//pdf-btn
+.pdf-btn{
+  border-radius: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+}
 //Extend
 %transition5 {
   -webkit-transition: all ease-in-out 0.5s;
