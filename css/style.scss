@@ -3,6 +3,7 @@ $mainColor: #00B5E0;
 $light-black: #6D6D6D;
 $light-gray: #AEACAC;
 $light-bg: rgba(0 , 181 , 224 , 0.1);
+$dark-font: #393939;
 
 @import "../scss/_functions.scss";
 @import "../scss/_variables.scss";
@@ -15,6 +16,9 @@ body{
   font-family: SegoeUI , 'sans-serif';
   background-color: #FCFCFC;
   color: #393939;
+}
+.fs-20{
+  font-size: 20px;
 }
 %my-btn{
   background-color: $mainColor;
@@ -276,7 +280,106 @@ a{
   font-size: 18px;
   min-width: 150px;
 }
+//top-personal-info
+.top-personal-info{
+  background-color: $mainColor;
+  color: #fff;
+  .personal-info-list{
+    margin: 0;
+    p{
+      margin-bottom: 0;
+    }
+    i{
+      background-color: #fff;
+      color: $mainColor;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+  .media{
+    img{
+      border-radius: 50%;
+      border: 1px solid #007B98;
+      height: 100px ;
+      width: 100px;
+      object-fit: cover;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+}
+//languages-s-c
+.languages-s-c{
+  h4{
+    color: $mainColor;
+    font-size: 18px;
+    font-weight: 600;
+  }
 
+  .progress{
+    margin-top: 3px;
+    height: 24px;
+    border-radius: 50px;
+    background-color:#B6E8F5;
+    .progress-bar{
+      font-size: 14px;
+      border-radius: 50px;
+      background-color:$mainColor;
+      padding-bottom: 2px;
+    }
+  }
+}
+//my-lst
+.my-list{
+  margin: 0;
+ &.pl-45{
+   padding-left: 45px;
+ }
+  li{
+    color: $dark-font;
+    padding-left: 20px;
+    position: relative;
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+    font-weight: 600;
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      height: 10px;
+      width: 10px;
+      background-color: $mainColor;
+      border-radius: 50%;
+    }
+  }
+
+}
+//awards-section
+.awards-section{
+  .awards-list:not(:last-child){
+    margin-bottom: 40px;
+  }
+}
+//second-title
+.second-title{
+  i{
+    color: #fff;
+    background-color: $mainColor;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    line-height: 33px;
+    text-align: center;
+  font-size: 18px;
+  }
+}
 //Extend
 %transition5 {
   -webkit-transition: all ease-in-out 0.5s;

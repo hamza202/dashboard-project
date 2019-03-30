@@ -6,6 +6,9 @@ body {
   background-color: #FCFCFC;
   color: #393939; }
 
+.fs-20 {
+  font-size: 20px; }
+
 .my-btn {
   background-color: #00B5E0;
   color: #fff;
@@ -221,6 +224,80 @@ a {
 .submit-btn {
   font-size: 18px;
   min-width: 150px; }
+
+.top-personal-info {
+  background-color: #00B5E0;
+  color: #fff; }
+  .top-personal-info .personal-info-list {
+    margin: 0; }
+    .top-personal-info .personal-info-list p {
+      margin-bottom: 0; }
+    .top-personal-info .personal-info-list i {
+      background-color: #fff;
+      color: #00B5E0;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px; }
+  .top-personal-info .media img {
+    border-radius: 50%;
+    border: 1px solid #007B98;
+    height: 100px;
+    width: 100px;
+    object-fit: cover; }
+  .top-personal-info .media p {
+    font-size: 15px; }
+
+.languages-s-c h4 {
+  color: #00B5E0;
+  font-size: 18px;
+  font-weight: 600; }
+.languages-s-c .progress {
+  margin-top: 3px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: #B6E8F5; }
+  .languages-s-c .progress .progress-bar {
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: #00B5E0;
+    padding-bottom: 2px; }
+
+.my-list {
+  margin: 0; }
+  .my-list.pl-45 {
+    padding-left: 45px; }
+  .my-list li {
+    color: #393939;
+    padding-left: 20px;
+    position: relative;
+    font-weight: 600; }
+    .my-list li:not(:last-child) {
+      margin-bottom: 10px; }
+    .my-list li::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 8px;
+      height: 10px;
+      width: 10px;
+      background-color: #00B5E0;
+      border-radius: 50%; }
+
+.awards-section .awards-list:not(:last-child) {
+  margin-bottom: 40px; }
+
+.second-title i {
+  color: #fff;
+  background-color: #00B5E0;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  line-height: 33px;
+  text-align: center;
+  font-size: 18px; }
 
 .my-btn, a, .mm-listitem.active a.mm-listitem__text, .mm-listitem:hover a.mm-listitem__text {
   -webkit-transition: all ease-in-out 0.3s;
