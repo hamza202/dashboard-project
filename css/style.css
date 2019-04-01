@@ -167,8 +167,8 @@ a {
 
 .edit-profile-photo img {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
   object-fit: cover; }
 
 .edit-profile-photo {
@@ -329,11 +329,57 @@ a {
 .select-filter .col-lg-3 {
   display: none; }
   .select-filter .col-lg-3.show {
-    display: block; }
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s; }
 
 .log-out img {
   width: 130px;
   height: 130px; }
+
+.dataTables_wrapper .buttons-html5, .dataTables_wrapper .buttons-print {
+  background-color: transparent;
+  color: #AEACAC;
+  border-color: #00b5e0; }
+  .dataTables_wrapper .buttons-html5:hover, .dataTables_wrapper .buttons-print:hover {
+    background-color: #00B5E0;
+    color: #fff; }
+
+table.dataTable {
+  overflow: hidden;
+  border: 1px solid #AEACAC;
+  border-radius: 15px;
+  width: 100% !important;
+  border-collapse: initial !important;
+  border-spacing: 0 !important;
+  margin: 1rem 0 !important;
+  font-size: 14px; }
+  table.dataTable th {
+    border: 0;
+    border-bottom: 0;
+    background-color: #DAF4FA; }
+  table.dataTable td {
+    border: 0; }
+  table.dataTable tr:nth-child(even) {
+    background-color: #DAF4FA; }
+  table.dataTable tr:nth-child(odd) {
+    background-color: #fff; }
+
+.page-link {
+  color: #00B5E0; }
+  .page-link:hover {
+    color: #00B5E0; }
+
+.page-item.active .page-link {
+  background-color: #00B5E0;
+  border-color: #00B5E0; }
+
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075); }
+
+.dataTables_paginate .paginate_button {
+  margin-left: 0.4rem; }
 
 .my-btn, a, .mm-listitem.active a.mm-listitem__text, .mm-listitem:hover a.mm-listitem__text, .check-container .custom-checkbox label.active {
   -webkit-transition: all ease-in-out 0.3s;
