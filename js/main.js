@@ -23,7 +23,7 @@ $(document).ready(function () {
                     hideNavbar: false
                 },
                 expanded: {
-                    use: '(min-width: 1200px)',
+                    use: '(min-width: 1900px)',
                     size: 35
                 }
             },
