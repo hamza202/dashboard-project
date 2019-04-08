@@ -359,11 +359,24 @@ table.dataTable {
     border-bottom: 0;
     background-color: #DAF4FA; }
   table.dataTable td {
-    border: 0; }
+    border: 0;
+    vertical-align: middle; }
+  table.dataTable .view-link {
+    color: #00B5E0; }
+    table.dataTable .view-link:hover {
+      color: #0082a5; }
+  table.dataTable tbody tr td:first-child {
+    width: 25%; }
   table.dataTable tr:nth-child(even) {
     background-color: #DAF4FA; }
   table.dataTable tr:nth-child(odd) {
     background-color: #fff; }
+  table.dataTable .media img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid #007B98; }
 
 .page-link {
   color: #00B5E0; }
