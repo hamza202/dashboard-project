@@ -537,7 +537,7 @@ table.dataTable{
       width: 70px;
       height: 70px;
       border-radius: 50%;
-      border: 1px solid $mainColor;
+      border: 1px solid #007B98;
     }
     textarea{
       margin-top: 15px;
@@ -576,7 +576,7 @@ table.dataTable{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 1px solid #00B5E0;
+    border: 1px solid #007B98;
   }
   h6{
     font-size: 18px;
@@ -605,6 +605,90 @@ table.dataTable{
 .gallary-container{
   img{
     width: 100%;
+  }
+}
+.comment-count{
+  border-top: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  ul{
+    li{
+      h3{
+        color: #393939;
+        font-size: 20px;
+        font-weight: 700;
+        position: relative;
+        top: -3px;
+      }
+      i{
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        color: #6D6D6D;
+        font-size: 22px;
+      }
+      }
+    }
+  }
+.sup-comment-media{
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ced4da;
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #007B98;
+  }
+  h4{
+    font-size: 16px;
+    color: #393939;
+    font-weight: 700;
+    margin: 0;
+  }
+  p{
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .media-body{
+    position: relative;
+    padding: 10px 15px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    .delete-comment{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      background-color: transparent;
+      border: 0;
+      transition: all ease-in-out 0.3s;
+      outline: 0;
+      color: #949494;
+      font-size: 15px;
+      &:hover{
+        color: #d33;
+      }
+    }
+  }
+}
+.write-comment-media{
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #007B98;
+  }
+  margin-top: 1.5rem;
+  .media-body{
+    input{
+      background-color: #F5F5F5;
+      border-radius: 100px;
+      padding-left: 30px;
+      height: 50px;
+    }
   }
 }
 //Extend
