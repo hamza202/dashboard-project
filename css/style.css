@@ -464,8 +464,13 @@ table.dataTable {
   .delete:focus {
     outline: 0; }
 
-.gallary-container img {
-  width: 100%; }
+.gallary-container {
+  text-align: center; }
+  .gallary-container img {
+    width: 100%; }
+    @media (max-width: 1199.98px) {
+      .gallary-container img {
+        margin-bottom: 20px; } }
 
 .comment-count {
   border-top: 1px solid #ced4da;
@@ -562,5 +567,11 @@ table.dataTable {
 .mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened ~ .mm-slideout {
   -webkit-transform: translate3d(350px, 0, 0);
   transform: translate3d(350px, 0, 0); }
+
+.morecontent span {
+  display: none; }
+
+.morelink {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */

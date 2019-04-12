@@ -7,13 +7,13 @@ $(document).ready(function () {
             iconbar: {
                 add: true,
                 size: 40,
-                type		: 'tabs',
+                // type		: 'tabs',
                 top: [
                     '<a href="#"><img src="./image/logo.png" class="logo" alt=""></a>',
-                    '<a href="#panel-menu"><span class="fal fa-address-book"></span></a>',
-                    '<a href="#panel-menu2"><span class="far fa-search"></span></a>',
-                    '<a href="#panel-menu3"><span class="fal fa-cog"></span></a>',
-                    '<a href="#panel-menu4"><span class="fal fa-user"></span></a>'
+                    '<a href="general-information.html" ><span class="fal fa-address-book"></span></a>',
+                    '<a href="search.html"><span class="far fa-search"></span></a>',
+                    '<a href="change-pass.html"><span class="fal fa-cog"></span></a>',
+                    '<a href="login.html"><span class="fal fa-user"></span></a>'
                 ],
             },
             sidebar: {
@@ -123,3 +123,51 @@ $(document).ready(function() {
 
 
 });
+
+
+//more
+$(document).ready(function() {
+    var showChar = 180;
+    var ellipsestext = "...";
+    var moretext = "Show more...";
+    var lesstext = "Show less";
+
+
+    $('.more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+
+});
+$("document").ready(function () {
+    setTimeout(function () {
+        var path = window.location.pathname.split("/").pop();
+        var target = $('.mm-iconbar__top a[href="'+path+'"]');
+        target.addClass('mm-iconbar__tab_selected');
+    }, 10);
+
+});
+
